@@ -1,0 +1,9 @@
+#cloud-config
+users:
+  - name: ubuntu
+    groups: users,sudo
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMgz49PfVZRDccAdAK6ArMFEik9P0xmg9ZU0DRPe3W+l user@laptop
+      - ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAsuA23ZC7zqbhT12axgDMi7RWvDAc7b6nLA3PQx6A3JK1z61SDVoC5jh7bilvUlskvATNejQoTYXGq4SjNt3f8Dswb0L26WMaMRE9kViFLmkSSpcawwXjKiAvVlq2mxwBFDo1XBbVGCpvURyWqpc9SaYNa/3rkJOHNEv8uIIrZN7l/B9T6GFCNMS/EPHuELXkfyjav53lhev9G/XKsSPDNNKMmXrTHdJzSZN9jyr8++YeSkEBx20ujC1uNvz4ZtXcU9mg91B+sGYek4XZVomfmQ8QjDGpe3LRd8rwJrNk3G45TU2XlipehpNxVMGXj3ZpNKFJKjy6SMmVq+upAeF1TQ== user@wsl-ubuntu
